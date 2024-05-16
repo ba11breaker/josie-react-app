@@ -33,7 +33,7 @@ const Flag = () => {
     return () => {
       // unmount
       console.log('unmount');
-      clearInterval(timer);
+      clearInterval(timer);                                                     
       clearInterval(timer1);
     };
   }, []);

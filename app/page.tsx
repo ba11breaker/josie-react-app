@@ -1,8 +1,11 @@
-import FirstComponent from "@/src/first-component";
-import Image from "next/image";
+'use client'
+import MiniClander from "@/src/mini-calendar";
 
 export default function Home() {
   return (
-   <FirstComponent />
+    <>
+   <MiniClander onChange={console.log} />
+   <MiniClander defaultValue={new Date('2022-2-1')} onChange={console.log}/>
+   </>
   );
 }
